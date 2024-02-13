@@ -1,16 +1,73 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intern Application Form</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
 
+<div class="container">
+  <h2>Intern Application Form</h2>
+  <form id="intern-application-form">
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="first-name-input">First Name</label>
+        <input type="text" class="form-control" id="first-name-input" required>
+        <div class="invalid-feedback">Please provide your first name.</div>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="last-name-input">Last Name</label>
+        <input type="text" class="form-control" id="last-name-input" required>
+        <div class="invalid-feedback">Please provide your last name.</div>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="email-input">Email</label>
+        <input type="email" class="form-control" id="email-input" required>
+        <div class="invalid-feedback">Please provide a valid email address.</div>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="college-input">College Name</label>
+        <input type="text" class="form-control" id="college-input" required>
+        <div class="invalid-feedback">Please provide your college name.</div>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="roll-no-input">Roll No</label>
+        <input type="text" class="form-control" id="roll-no-input" required>
+        <div class="invalid-feedback">Please provide your roll number.</div>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="graduation-year-input">Graduation Year</label>
+        <select class="form-control" id="graduation-year-input" required>
+          <option value="">Choose...</option>
+          <option>2020</option>
+          <option>2021</option>
+          <option>2022</option>
+          <option>2023</option>
+        </select>
+        <div class="invalid-feedback">Please select your graduation year.</div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="conditions-checkbox" required>
+        <label class="form-check-label" for="conditions-checkbox">
+          Agree to Terms and Conditions
+        </label>
+        <div class="invalid-feedback">You must agree to the terms and conditions.</div>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-
 </html>
